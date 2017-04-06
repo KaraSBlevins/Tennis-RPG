@@ -1,4 +1,4 @@
-function makeOpponent()
+function makeOpponent() //creates a random opponent with random stats
 {
 	var firstNames = ["Donald", "Tommy", "John", "James", "Fred", "Pete", "David"];
 	var lastNames = ["Young", "Edwards", "Jackson", "Hartman", "Douglas", "Adams", "Peterson"];
@@ -20,7 +20,7 @@ function makeOpponent()
 	var rand8 = Math.floor(Math.random() * serve.length);
 	var rand9 = Math.floor(Math.random() * volley.length);
 	
-	var opponent = 
+	var opponent = //create a new opponent object
 	{
 		firstName: firstNames[rand1],
 		lastName: lastNames[rand2],
@@ -38,7 +38,7 @@ function makeOpponent()
 function displayOpponent(opponent)
 {
 	document.write("Your opponent's  name is " + opponent.firstName + " " + opponent.lastName + '<br/>' +
-		"Their stats are: " + '<br/>' + "Age: " + opponent.age + '<br/>' + 
+		"<u>Stats</u>" + '<br/>' + "Age: " + opponent.age + '<br/>' + 
 		"Height: " +  opponent.height + " inches" + '<br/>' +  "Weight: " + opponent.weight + " lbs" + '<br/>' + 
 		"Serve: " + opponent.serve + '<br/>' + "Forehand: " + opponent.forehand + '<br/>' +
 		"Backhand: " + opponent.backhand + '<br/>' + "Volley: " + opponent.volley + '<br/>');
