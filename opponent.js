@@ -39,7 +39,7 @@ function displayOpponent(opponent)
 {
 	document.write("Your opponent's  name is " + opponent.firstName + " " + opponent.lastName + '<br/>' +
 		"Their stats are: " + '<br/>' + "Age: " + opponent.age + '<br/>' + 
-		"Height: " +  opponent.height + '<br/>' +  "Weight: " + opponent.weight + '<br/>' + 
+		"Height: " +  opponent.height + " inches" + '<br/>' +  "Weight: " + opponent.weight + " lbs" + '<br/>' + 
 		"Serve: " + opponent.serve + '<br/>' + "Forehand: " + opponent.forehand + '<br/>' +
 		"Backhand: " + opponent.backhand + '<br/>' + "Volley: " + opponent.volley + '<br/>');
 }
